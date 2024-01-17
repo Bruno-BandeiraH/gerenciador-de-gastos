@@ -32,10 +32,6 @@ public class GastoService {
         return gastoRepository.findByTipoDeGasto(gasto);
     }
 
-    public List<Gasto> listarPorQuantidade(int quantidade) {
-        return gastoRepository.findByQuantidade(quantidade);
-    }
-
     public List<Gasto> listarPorData(LocalDate data) {
         return gastoRepository.findByData(data);
     }
