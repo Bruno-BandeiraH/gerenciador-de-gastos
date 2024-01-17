@@ -5,5 +5,5 @@ public enum TipoDeGasto {
     HIGIENE_PESSOAL,
     LIMPEZA_GERAL,
     GASTOS_FIXOS,
-    OUTROS
+    OUTRO
 }

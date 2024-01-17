@@ -5,5 +5,6 @@ public enum TipoDeQuantidade {
     ML,
     G,
     KG,
-    UNIDADE
+    UNIDADE,
+    NAO_APLICAVEL
 }
