@@ -11,7 +11,6 @@ import com.brunobandeira.controledegastos.util.TipoDeGasto;
 public interface GastoRepository extends JpaRepository<Gasto, Long>{
     
     List<Gasto> findByNome(String nome);
-    List<Gasto> findByQuantidade(int quantidade);
     List<Gasto> findByTipoDeGasto(TipoDeGasto tipoDeGasto);
     List<Gasto> findByData(LocalDate data);
 }
