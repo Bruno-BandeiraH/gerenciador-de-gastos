@@ -23,7 +23,7 @@ public class Gasto {
     @Enumerated(EnumType.STRING)
     private TipoDeGasto TipoDeGasto;
     private String nome;
-    private String quantidade;
+    private int quantidade;
     @Enumerated(EnumType.STRING)
     private TipoDeQuantidade TipoDeQuantidade;
     private double valor;
@@ -49,10 +49,10 @@ public class Gasto {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getQuantidade() {
+    public int getQuantidade() {
         return quantidade;
     }
-    public void setQuantidade(String quantidade) {
+    public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
     public TipoDeQuantidade getTipoDeQuantidade() {
