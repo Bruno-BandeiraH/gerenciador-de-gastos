@@ -21,11 +21,11 @@ public class Gasto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Enumerated(EnumType.STRING)
-    private TipoDeGasto TipoDeGasto;
+    private TipoDeGasto tipoDeGasto;
     private String nome;
     private int quantidade;
     @Enumerated(EnumType.STRING)
-    private TipoDeQuantidade TipoDeQuantidade;
+    private TipoDeQuantidade tipoDeQuantidade;
     private double valor;
     private LocalDate data;
 
@@ -38,10 +38,10 @@ public class Gasto {
         this.id = id;
     }
     public TipoDeGasto getTipoDeGasto() {
-        return TipoDeGasto;
+        return tipoDeGasto;
     }
     public void setTipoDeGasto(TipoDeGasto tipoDeGasto) {
-        TipoDeGasto = tipoDeGasto;
+        tipoDeGasto = tipoDeGasto;
     }
     public String getNome() {
         return nome;
@@ -56,10 +56,10 @@ public class Gasto {
         this.quantidade = quantidade;
     }
     public TipoDeQuantidade getTipoDeQuantidade() {
-        return TipoDeQuantidade;
+        return tipoDeQuantidade;
     }
     public void setTipoDeQuantidade(TipoDeQuantidade tipoDeQuantidade) {
-        TipoDeQuantidade = tipoDeQuantidade;
+        tipoDeQuantidade = tipoDeQuantidade;
     }
     public double getValor() {
         return valor;
