@@ -41,7 +41,7 @@ public class Gasto {
         return tipoDeGasto;
     }
     public void setTipoDeGasto(TipoDeGasto tipoDeGasto) {
-        tipoDeGasto = tipoDeGasto;
+        this.tipoDeGasto = tipoDeGasto;
     }
     public String getNome() {
         return nome;
@@ -59,7 +59,7 @@ public class Gasto {
         return tipoDeQuantidade;
     }
     public void setTipoDeQuantidade(TipoDeQuantidade tipoDeQuantidade) {
-        tipoDeQuantidade = tipoDeQuantidade;
+        this.tipoDeQuantidade = tipoDeQuantidade;
     }
     public double getValor() {
         return valor;
