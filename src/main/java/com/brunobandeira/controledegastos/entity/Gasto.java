@@ -1,7 +1,6 @@
 package com.brunobandeira.controledegastos.entity;
 
 import com.brunobandeira.controledegastos.util.TipoDeGasto;
-import com.brunobandeira.controledegastos.util.TipoDeQuantidade;
 
 import java.time.LocalDate;
 
@@ -24,8 +23,6 @@ public class Gasto {
     private TipoDeGasto tipoDeGasto;
     private String nome;
     private int quantidade;
-    @Enumerated(EnumType.STRING)
-    private TipoDeQuantidade tipoDeQuantidade;
     private double valor;
     private LocalDate data;
 
@@ -54,12 +51,6 @@ public class Gasto {
     }
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
-    }
-    public TipoDeQuantidade getTipoDeQuantidade() {
-        return tipoDeQuantidade;
-    }
-    public void setTipoDeQuantidade(TipoDeQuantidade tipoDeQuantidade) {
-        this.tipoDeQuantidade = tipoDeQuantidade;
     }
     public double getValor() {
         return valor;
