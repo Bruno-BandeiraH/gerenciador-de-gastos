@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.brunobandeira.controledegastos.entity.Gasto;
 import com.brunobandeira.controledegastos.service.GastoService;
-import com.brunobandeira.controledegastos.util.TipoDeGasto;
 
 @RestController
 @RequestMapping("gastos")
@@ -49,7 +48,7 @@ public class GastoController {
     }
 
     @GetMapping("/gasto/{gasto}")
-    public List<Gasto> listarPorTipoDeGasto(@PathVariable TipoDeGasto gasto) {
+    public List<Gasto> listarPorTipoDeGasto(@PathVariable String gasto) {
         return gastoService.listarPorTipoDeGasto(gasto);
     }
     

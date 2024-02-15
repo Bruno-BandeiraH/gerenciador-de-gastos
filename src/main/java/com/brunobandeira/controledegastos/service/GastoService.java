@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.brunobandeira.controledegastos.entity.Gasto;
 import com.brunobandeira.controledegastos.repository.GastoRepository;
-import com.brunobandeira.controledegastos.util.TipoDeGasto;
 
 @Service
 public class GastoService {
@@ -28,7 +27,7 @@ public class GastoService {
         return gastoRepository.findByNome(nome);
     }
 
-    public List<Gasto> listarPorTipoDeGasto(TipoDeGasto gasto) {
+    public List<Gasto> listarPorTipoDeGasto(String gasto) {
         return gastoRepository.findByTipoDeGasto(gasto);
     }
 

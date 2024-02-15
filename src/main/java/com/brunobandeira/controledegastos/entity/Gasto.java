@@ -1,12 +1,8 @@
 package com.brunobandeira.controledegastos.entity;
 
-import com.brunobandeira.controledegastos.util.TipoDeGasto;
-
 import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -19,8 +15,7 @@ public class Gasto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Enumerated(EnumType.STRING)
-    private TipoDeGasto tipoDeGasto;
+    private String tipoDeGasto;
     private String nome;
     private int quantidade;
     private double valor;
@@ -34,10 +29,10 @@ public class Gasto {
     public void setId(Long id) {
         this.id = id;
     }
-    public TipoDeGasto getTipoDeGasto() {
+    public String getTipoDeGasto() {
         return tipoDeGasto;
     }
-    public void setTipoDeGasto(TipoDeGasto tipoDeGasto) {
+    public void setTipoDeGasto(String tipoDeGasto) {
         this.tipoDeGasto = tipoDeGasto;
     }
     public String getNome() {
